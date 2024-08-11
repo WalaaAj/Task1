@@ -1,0 +1,75 @@
+<div class="portfolio container py-5 position-relative">
+
+    <div class="p-5">
+        <h1 class="text-center pt-5">PORTFOLIO COMPONENT</h1>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="line"></div>
+            <i class="fa-solid fa-star mx-3"></i>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="row py-5 g-5">
+        <div class="col-md-4">
+            <div class="image position-relative">
+                <img src="./assets/image/poert1.png" alt="hous" class="w-100">
+                <div class="layer d-flex justify-content-center align-items-center position-absolute top-0 start-0 h-100 w-100"
+                    (click)="open('./assets/image/poert1.png')">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image position-relative">
+                <img src="./assets/image/port2.png" alt="dessert" class="w-100">
+                <div class="layer d-flex justify-content-center align-items-center position-absolute top-0 start-0 h-100 w-100"
+                    (click)="open('./assets/image/port2.png')">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image position-relative">
+                <img src="./assets/image/port3.png" alt="hous" class="w-100">
+                <div class="layer d-flex justify-content-center align-items-center position-absolute top-0 start-0 h-100 w-100"
+                    (click)="open('./assets/image/port3.png')">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image position-relative">
+                <img src="./assets/image/poert1.png" alt="hous" class="w-100">
+                <div class="layer d-flex justify-content-center align-items-center position-absolute top-0 start-0 h-100 w-100"
+                    (click)="open('./assets/image/poert1.png')">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image position-relative">
+                <img src="./assets/image/port2.png" alt="dessert" class="w-100">
+                <div class="layer d-flex justify-content-center align-items-center position-absolute top-0 start-0 h-100 w-100"
+                    (click)="open('./assets/image/port2.png')">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image position-relative">
+                <img src="./assets/image/port3.png" alt="hous" class="w-100">
+                <div class="layer d-flex justify-content-center align-items-center position-absolute top-0 start-0 h-100 w-100"
+                    (click)="open('./assets/image/port3.png')">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if(isClicked==true){
+    <div class="model position-absolute top-50 start-50 translate-middle">
+        <img [src]=" imgSrc" alt="hous" class="w-100 position-relative">
+        <i class="fa-solid fa-x position-absolute text-white" style="top:20px; right:20px;" (click)="isClose()"></i>
+    </div>
+    }
+
+</div>

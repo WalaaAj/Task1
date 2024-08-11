@@ -1,1 +1,102 @@
 /* You can add global styles to this file, and also import other style files */
+.navbar, .footer {
+    background-color: #2C3D4F;
+}
+
+.navbar .nav-link, .navbar-brand:hover {
+    cursor: pointer;
+}
+
+.navbar .nav-link:focus {
+    background-color: #19BC9B;
+}
+
+.navbar .nav-link, .navbar-brand {
+    font-size: large;
+    font-weight: 800;
+}
+
+.developer, .about {
+    background-color: #19BC9B;
+    color: #fff;
+}
+
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul i {
+    font-size: 24px;
+}
+
+.copyright {
+    background-color: #1A252F;
+}
+
+.about h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.about p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.contact-btn {
+    background-color: #19BC9B;
+}
+
+.contact-btn:hover {
+    background-color: #19bc9c;
+}
+
+.about i, .contact i, .developer i {
+    font-size: 24px;
+}
+
+.about .line, .contact .line, .developer .line, .portfolio .line {
+    width: 100px;
+    height: 5px;
+    background-color: white;
+}
+
+.contact .line, .portfolio .line {
+    background-color: #2C3D4F;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.portfolio img:hover {
+    cursor: pointer;
+}
+.portfolio .layer{
+    background-color: #20BB9B;
+    opacity: 0;
+    transition:  all 0.5s;
+}
+.portfolio .layer i{
+font-size: 68px;
+color: white;
+}
+
+.image:hover .layer{
+    opacity: 0.8;
+}
+
+.round{
+    border: solid 1px white;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    
+}
